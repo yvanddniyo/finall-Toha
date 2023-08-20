@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+ 
+.image-1{
+  width: 100%;
+   height: 100%; 
+  background-image:url("https://i.pinimg.com/1200x/e3/5e/d2/e35ed26e9dabd035f12f34d248a0dda0.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  
+} 
+.image-2{
+  width: 100%;
+   height: 100%; 
+  background-image:url("https://www.visitrwanda.com/wp-content/uploads/fly-images/13327/RWANDA-CLOTHING_ACCESSORIES-2018-1_-17-2-1650x1100.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  
+} 
+.image-3{
+  width: 100%;
+   height: 100%; 
+  background-image:url("https://i.pinimg.com/1200x/61/9d/3a/619d3a3dc420be7eeda88e876ab17163.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  
+
+} 
+.image-4{
+  width: 100%;
+   height: 100%; 
+  background-image:url("https://www.rcfs.rw/images/models.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  
+} 
+
+/* product image */
+
+.product-1{
+  width: 20vw;
+  height: 24vh; 
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background-image:url("https://di2ponv0v5otw.cloudfront.net/posts/2022/08/10/62f3fe73ff04849f4487b9d8/m_62f3ff017f29dd54f40ed9f4.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+} 
+.product-2{
+  width: 20vw;
+  height: 24vh; 
+
+  background-image:url("https://i.pinimg.com/1200x/b5/7d/b0/b57db08e973f4ddf0086131417a89aff.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+} 
+.product-3{
+  width: 20vw;
+  height: 24vh; 
+  background-image:url("https://i.pinimg.com/1200x/b5/7d/b0/b57db08e973f4ddf0086131417a89aff.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+} 
+.product-4{
+  width: 20vw;
+  height: 24vh; 
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREDSa7xe79T5CXdxdhukLQbc2zTPj-QHOHCqdh-NXfA-Z2Tn2dMEiIxC4k2TGNo-8VR04&usqp=CAU");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+} 
+.product-5{
+  width: 20vw;
+  height: 24vh; 
+
+  background-image:url("https://images-na.ssl-images-amazon.com/images/I/91YM1SlXSEL._SLDPMOBCAROUSELAUTOCROP288221_MCnd_AC_SR462,693_.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+} 
+
+/* new arrival */
+
+.arrivar-1{
+  width: 100%;
+  height: 100%; 
+  background-image:url("https://cdn-ehepc.nitrocdn.com/irBzRYkBekzJBgZevpNPMGNeqdaqURgx/assets/images/optimized/rev-10936d8/hwmiia.fra1.digitaloceanspaces.com/wp-content/uploads/2021/04/06122933/uzuri-models-800x533-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+}
+.arrivar-2{
+   width: 100%; 
+  height: 100%;  
+  background-image:url("https://pbs.twimg.com/media/FVOfv6tWIAEiLU-.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  
+}
+

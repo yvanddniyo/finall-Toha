@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toha Fashion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="src/input.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+/>
+</head>
+<body class="overflow-x-hidden">
+  <!-- first header -->
+
+  <div class="header bg-gray-950 w-screen h-10 flex md:justify-end justify-around items-center  space-x-2 md:pr-12">
+    <div class="relative inline-block text-left  ">
+      <button id="dropdown-button" type="button" class="inline-flex  items-center px-[14px] py-[6px] border border-none shadow-sm rounded-md text-sm font-medium text-gray-100  focus:outline-none  ">
+        RWF
+        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </button>
+    
+      <div id="dropdown-menu" class="hidden z-[999] origin-top-right absolute right-0 mt-2 w-[5rem] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+        <div class="py-1 " role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
+          <a href="#" class="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem"> USD</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem"> RWF</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">UGX</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">EUR</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">KES</a>
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">TZS</a>
+        </div>
+      </div>
+    </div>
+    <div class=" flex items-center space-x-1  cursor-pointer">
+      <h4 class="text-gray-100">WishList </h4>
+      <span class="text-gray-50"><i class="fa-regular fa-heart"></i></span>
+    </div>
+    <div class="about-us flex items-center cursor-pointer">
+      <h4 class="text-gray-100">Abous us</h4>
+    </div>
+ </div>
+
+ <!-- second header consisting menu and logo... -->
+
+ <div class="s-header">
+   <div class=" flex items-center pl-6 lg:justify-around">
+    <div class="flex items-center justify-center">
+      <div class="logo cursor-pointer w-16 h-16">
+         <img class="w-full h-full object-contain" src="images/gemini.jpg" alt="">
+      </div>
+      <div class="flex justify-end items-end absolute right-4 top-[45px]">
+          <button id="menu-toggle" class=" lg:hidden block border-4 border-gray-500 rounded text-gray-600 hover:text-white focus:text-white focus:outline-none">
+              <svg class="h-10 w-12 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+          </button>
+      </div>
+    </div>
+
+     <!-- navigation -->
+
+     <div class="hidden lg:flex space-x-6 lg:space-x-10">
+       <div class="flex space-x-12">
+        <div class="container relative mr-18">
+          <div class=" dropdown-click flex space-x-1 cursor-pointer">
+            <h4>Women </h4>
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="  z-[1000] dropdown hidden bg-gray-100 w-48 p-4 space-y-2 border rounded absolute right-0">
+              <div class="flex flex-col">
+                <a href="">women sandals</a>
+                <a class="py-1" href="">Women gift card</a>
+                <a class="py-1" href="">Women Closed Shoes</a>
+                <a href="">Women bags</a>
+            </div>
+          </div>
+        </div>
+        <div class="container relative ">
+          <div class=" dropdown-click flex space-x-1 cursor-pointer">
+            <h4>Men</h4>
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="dropdown hidden  z-[1000] bg-gray-100 w-36 p-4 space-y-2 border rounded absolute right-0">
+              <div class="flex flex-col">
+                <a href="">Men sandals</a>
+            </div>
+          </div>
+        </div>
+        <div class="container relative ">
+          <div class=" dropdown-click flex space-x-1">
+            <h4>Kids</h4>
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="dropdown hidden  z-[1000] bg-gray-100 w-36 p-4 space-y-2 border rounded absolute right-0">
+              <div class="flex flex-col">
+                <a href="">Kids sandals</a>
+            </div>
+          </div>
+        </div>
+        <div class="merchant">
+          <a href="#">Merchanise</a>
+        </div>
+        <div class="merchant">
+          <a href="#">Repair</a>
+        </div>
+      
+       <!-- search section -->
+        
+        <div class="search">
+          <div class="mean-search flex border-b-2 border-gray-500 focus:border-white ">
+          <input type="text" class="outline-none " name="search" id="search-desttop" placeholder="search a product">
+          <span><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+
+       <!-- user and cart  -->
+
+        <div class="container ">
+          <div class="flex  space-x-4 ">
+            <div class="cursor-pointer">
+              <i class="fas fa-user text-2xl"></i>
+            </div>
+            <div class="cursor-pointer">
+              <i class="fas fa-bag-shopping text-2xl"></i>
+            </div>
+          </div>
+       </div>
+    </div>
+    </div> 
+   
+</div>
+</nav>
+<div id="mobile-menu" class="hidden lg:hidden bg-white mt-[56px] space-y-3">
+  <div class="mean-search flex w-52 border-b-2 border-gray-500 focus:border-white  ml-6">
+    <input type="text" class="outline-none " name="search" id="search" placeholder="search a product">
+    <span><i class="fas fa-search"></i></span>
+    </div>
+  <div class="container relative  w-screen">
+    <div class=" dropdown-click flex space-x-1 pl-6">
+     <h4>Women </h4>
+     <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+    <div class="dropdown  z-[1000]  hidden bg-gray-100 w-[90%] p-4 space-y-2 border rounded left-32 top-1  ml-4  ">
+     <div class="flex flex-col">
+        <a class="opacity-70" href="">women sandals</a>
+        <a class="opacity-70" class="py-1" href="">Women gift card</a>
+        <a class="opacity-70" class="py-1" href="">Women Closed Shoes</a>
+        <a class="opacity-70" href="">Women bags</a>
+      </div>
+   </div>
+ </div>
+ <div class="container relative ">
+   <div class=" dropdown-click flex space-x-1 pl-6">
+   <h4>Men</h4>
+   <span><i class="fas fa-chevron-down"></i></span>
+  </div>
+   <div class="dropdown hidden bg-gray-100 w-[90%] p-4 space-y-2 border rounded left-32 ml-4">
+     <div class="flex flex-col">
+       <a href="">Men sandals</a>
+     </div>
+  </div>
+ </div>
+ <div class="container relative ">
+   <div class=" dropdown-click flex space-x-1 pl-6">
+   <h4>Kids</h4>
+   <span><i class="fas fa-chevron-down"></i></span>
+  </div>
+   <div class="dropdown hidden bg-gray-100 w-[90%] p-4 space-y-2 border rounded left-32 ml-4">
+     <div class="flex flex-col">
+       <a href="">Kids sandals</a>
+     </div>
+  </div>
+ </div>
+ <div class="merchant pl-6">
+  <a href="#">Merchanise</a>
+ </div>
+ <div class="merchant pl-6">
+  <a href="#">Repair</a>
+ </div>
+ <div class="login sm:hidden">
+   <div class="bg-gray-950 w-28 h-10 text-white flex items-center justify-center rounded ml-6 hover:opacity-75">Login</div>
+ </div>
+
+
+ </div>
+ <!-- Landing pages with auto slide -->
+ 
+ <div class="swiper mySwiper mt-8 md:my-3 w-[100%] h-[90vh] ">
+  <div class="swiper-wrapper ">
+    <div class="swiper-slide ">
+      <div class="image-1 block md:pl-24 px-8 md:pt-44 pt-28 ">
+        <div class="container w-[17rem]  md:w-[28rem] h-[17rem]  bg-[rgba(0,0,0,0.5)] p-6">
+          <div class="title text-white  flex flex-col space-y-8">
+            <h1 class="md:text-3xl text-xl font-bold ">
+              The Journey begins with the perfect pairs
+            </h1>
+            <p class="text-[12px]">free shipping on all orders over $100</p>
+             <div class="border text-black text-[12px] font-semibold bg-white rounded-sm w-32 h-12 flex items-center justify-center">
+              SHOP NOW
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="image-2 md:pl-24 px-8 md:pt-44 pt-28">
+        <div class="container  w-[17rem]  md:w-[28rem] h-[17rem]  bg-[rgba(0,0,0,0.5)] p-6">
+          <div class="title text-white  flex flex-col space-y-8">
+            <h1 class="md:text-3xl text-xl font-bold ">
+              Wear our brand, and get pride
+            </h1>
+            <p class="text-[12px]">get yours today!</p>
+             <div class="border text-black text-[12px] font-semibold bg-white rounded-sm w-32 h-12 flex items-center justify-center">
+              SHOP NOW
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="image-3 md:pl-24 px-8 md:pt-44 pt-28">
+        <div class="container  w-[17rem]  md:w-[28rem] h-[17rem]  bg-[rgba(0,0,0,0.7)] p-6">
+          <div class="title text-white  flex flex-col space-y-8">
+            <h1 class="md:text-3xl text-xl font-bold ">
+              Enlight your body with us
+            </h1>
+            <p class="text-[12px]">Get promotion every clothers you buy!</p>
+             <div class="border text-black text-[12px] font-semibold bg-white rounded-sm w-32 h-12 flex items-center justify-center">
+              SHOP NOW
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide bg-[url('images/gemini (3).jpg')]">
+     <div class="image-4 md:pl-24 px-8 md:pt-44 pt-28">
+      <div class="container w-[17rem]  md:w-[28rem] h-[17rem] bg-[rgba(0,0,0,0.5)] p-6">
+        <div class="title text-white  flex flex-col space-y-8">
+          <h1 class="md:text-3xl text-xl font-bold ">
+            Go anywhere with our clothers!
+          </h1>
+          <p class="text-[12px]">Don't miss out!</p>
+           <div class="border text-black text-[12px] font-semibold bg-white rounded-sm w-32 h-12 flex items-center justify-center">
+            SHOP NOW
+           </div>
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>
+  <!-- <div class="swiper-button-next text-gray-900 text-sm"></div>
+  <div class="swiper-button-prev"></div> -->
+  <div class="swiper-pagination"></div>
+</div>
+
+  <!-- Our product section  -->
+
+   <div class=" product-image flex ">
+      <div class="md:px-[22rem] px-20 py-32 ">
+        <img class="w-full h-full object-contain" src="https://www.uzuriky.com/SMILE@2x.png" alt="imagen">
+      </div>
+   </div>
+
+    <!-- main product -->
+
+    <div class="product-container flex justify-center items-center flex-wrap space-x-4 space-y-4 pb-12">
+        <div class="product-1 w-32 h-32  mt-4">
+          <a href="">
+            <h2 class="text-white font-semibold w-[20vw] h-[24vh] flex items-center justify-center bg-[rgba(0,0,0,0.4)] md:text-2xl">Trousers</h2>
+          </a>
+        </div>
+        <div class="product-2 w-32 h-32">
+          <a href="">
+            <h2 class="text-white font-semibold w-[20vw] h-[24vh] flex items-center justify-center bg-[rgba(0,0,0,0.4)] md:text-2xl">Shoes</h2>
+          </a>
+        </div>
+        <div class="product-3 w-32 h-32">
+          <a href="">
+            <h2 class="text-white font-semibold w-[20vw] h-[24vh] flex items-center justify-center bg-[rgba(0,0,0,0.4)] md:text-2xl">Shirt</h2>
+          </a>
+        </div>
+        <div class="product-4 w-32 h-32">
+          <a href="">
+            <h2 class="text-white font-semibold w-[20vw] h-[24vh] flex items-center justify-center bg-[rgba(0,0,0,0.4)] md:text-2xl">Sandals</h2>
+          </a>
+        </div>
+        <div class="product-5 w-32 h-32">
+          <a href="">
+            <h2 class="text-white font-semibold w-[20vw] h-[24vh] flex items-center justify-center bg-[rgba(0,0,0,0.4)] md:text-2xl ">Dresses</h2>
+          </a>
+        </div>
+    </div>
+     
+    <!-- new arrival  -->
+
+    <div class="container my-12">
+      <div class=" md:flex  space-x-2 space-y-2 md:mx-8 mx-6">
+        <div class=" md:w-[40%] w-[100%] h-[50vh] mt-2 pl-2">
+          <div class="arrivar-1 w-full h-full object-cover md:p-10 flex items-center justify-center ml-2">
+            <div class="bg-[rgba(0,0,0,0.5)] w-52 h-52 text-white pl-4 flex-col space-y-6">
+              <h1 class="font-bold text-2xl p-3 ">New arrivals</h1>
+              <p class="text-[12px]">Get yours here!</p>
+              <button class=" bg-white text-black font-semibold  py-2 px-10 rounded-sm  hover:bg-black hover:text-white">Explore</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[100%] h-[50vh ] mt-2 pl-2">
+          <div class="arrivar-2 w-full h-full object-cover flex items-center justify-center">
+            <div class="bg-[rgba(0,0,0,0.8)] md:w-[28rem] md:h-[20rem] w-52 h-52 text-white py-2 px-8 flex flex-col space-y-4 md:space-y-12 items-center justify-center">
+              <h1 class="font-bold text-2xl p-3 ">Shirt</h1>
+              <p class="text-[12px] pl-4">Dress your pride!</p>
+              <div>
+                <button class=" bg-white text-black font-semibold  py-2 px-10 rounded-sm  hover:bg-black hover:text-white">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- price and feature -->
+
+    <div class="section-of-price md:h-[90vh] h-[100%] w-screen bg-gray-200 my-12 py-6 ">
+      <div class="feautes W-[75vw] mx-6 flex justify-between  ">
+        <h1 class="font-bold">FEATURE ITEMS</h1>
+        <p class="font-semibold text-[14px]">SEE ALL PRODUCTS ></p>
+      </div>
+      <div class=" h-full flex items-center justify-center mx-6 md:mx-12 space-x-3 space-y-3 flex-wrap ">
+        <div class="wrapper md:w-52 w-36">
+          <div class="image  md:w-52 flex items-center mt-3">
+            <img class="h-full w-full object-cover aspect-square"  src="images/gemini (3).jpg" alt="image-4">
+          </div>
+          <div class="name flex items-center justify-between">
+            <h1><i class="fa-regular fa-heart"></i> Gaga</h1>
+            <div class="border border-gray-800 circle w-3 h-3 bg-blue-400 rounded-full"></div>
+          </div>
+          <div class="price flex items-center justify-between">
+            <h2 class="price font-bold text-[13px]">31,000 RWF</h2>
+              <p><i class="fa-regular fa-star text-yellow-800"></i>4<span class="text-[9px]">(2)</span></p>
+         </div>
+       </div>
+
+        <div class="wrapper md:w-52 w-36">
+          <div class="image  md:w-52 flex items-center">
+            <img class="h-full w-full object-cover aspect-square"  src="images/gemini (5).jpg" alt="image-4">
+          </div>
+          <div class="name flex items-center justify-between">
+            <h1><i class="fa-regular fa-heart"></i> Shirt</h1>
+            <div class="border border-gray-800 circle w-3 h-3 bg-red-300 rounded-full"></div>
+          </div>
+          <div class="price flex items-center justify-between">
+            <h2 class="price font-bold text-[13px]">11,000 RWF</h2>
+              <p><i class="fa-regular fa-star text-yellow-400"></i>3<span class="text-[9px]">(1)</span></p>
+         </div>
+       </div>
+
+        <div class="wrapper md:w-52 w-36">
+          <div class="image  md:w-52 flex items-center">
+            <img class="h-full w-full object-cover aspect-square"  src="images/gemini (6).jpg" alt="image-4">
+          </div>
+          <div class="name flex items-center justify-between">
+            <h1><i class="fa-regular fa-heart"></i> Overcoat</h1>
+            <div class="border border-gray-800 circle w-3 h-3 bg-red-300 rounded-full"></div>
+          </div>
+          <div class="price flex items-center justify-between">
+            <h2 class="price font-bold text-[13px]">20,000 RWF</h2>
+              <p><i class="fa-regular fa-star text-yellow-400"></i>5<span class="text-[9px]">(2)</span></p>
+         </div>
+       </div>
+
+        <div class="wrapper md:w-52 w-36">
+          <div class="image  md:w-52 flex items-center">
+            <img class="h-full w-full object-cover aspect-square"  src="images/germini (13).jpg" alt="image-4">
+          </div>
+          <div class="name flex items-center justify-between">
+            <h1><i class="fa-regular fa-heart"></i> Gaga</h1>
+            <div class="border border-gray-800 circle w-3 h-3 bg-yellow-300 rounded-full"></div>
+          </div>
+          <div class="price flex items-center justify-between">
+            <h2 class="price font-bold text-[13px]">31,000 RWF</h2>
+              <p><i class="fa-regular fa-star text-gray-700"></i>4<span class="text-[9px]">(2)</span></p>
+         </div>
+       </div>
+      </div>
+    </div>
+
+      <!-- SHOP at the stores -->
+
+      <h1 class="font-bold md:text-2xl text-xl md:pl-44 pl-8 opacity-80">SHOP AT THE STORES</h1>
+      <div class="container my-12 md:flex md:flex-row flex flex-col items-center justify-center">
+        <div class="location relative md:w-[30vw] w-[302px] h-52 md:h-[72vh] border flex items-center justify-center">
+  
+          <div class="h-[2px] w-[100%] bg-slate-600 mb-2 ">
+            <h1 class="text-[11px] font-bold ml-2 py-3">Kacyiru  shop</h1>
+             <p class="underline ml-2 py-3 text-[13px] font-bold font-sans"><a href="#">KG 7 EVE</a></p>
+          </div>
+          <div class="w-[2px] h-[100%] bg-slate-600 absolute">
+              <h1 class="text-[11px] font-bold ml-2 py-3">Gishushu shop</h1>
+               <p class="underline ml-2  text-[13px] font-bold font-sans"><a href="#">KG21EVE</a></p>
+          </div>
+        </div>
+        <div class="">
+          <iframe 
+          class="w-62 h-52 md:h-[72vh] md:w-[30vw]"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63800.236368030884!2d30.067846887197174!3d-1.9470653970038998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca774626f129f%3A0x6226e99fffd9a3ed!2sRemera%2C%20Kigali!5e0!3m2!1sen!2srw!4v1692440177448!5m2!1sen!2srw" 
+            style="border:0;"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+
+      <!-- footer  -->
+
+      <footer>
+
+        <!-- first part of footer -->
+        <div class="container w-screen h-[8rem] bg-gray-300 flex md:justify-around items-center">
+          <div class="logo w-24 h-24 hidden lg::visible ">
+            <a href="#">
+              <img class="w-full h-full object-cover aspect-square " src="images/gemini.jpg" alt="gemini">
+            </a>
+          </div>
+          <div class="social-media flex space-x-2 md:space-x-3 w-44 ml-2">
+            <a href="">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </div>
+          <div class="about-us">
+            <a href="">
+              <h3 class="text-[12px] font-semibold">About us Toha Fashion <span class="hover:scale-[1.2]">></span> </h3>
+            </a>
+          </div>
+        </div>
+
+        <!-- second part of footer -->
+        <div class="container bg-gray-950 h-[100%] text-white flex md:flex-row  flex-col justify-around space-y-3 items-center opacity-95">
+          <div class="about w-64 h-44 mt-10">
+            <h1 class="font-bold">ABOUT</h1>
+            <p>
+              Toha Fashion is an African inspired eco-friendly shoe brand using the 4R technology of recycling, reusing, recovering and reducing car tires to produce eco friendly footwear... <a href="">read more</a>
+            </p>
+          </div>
+          <div class="contact ml-[-2rem]">
+            <h1 class="font-bold">CONTACT</h1>
+              <ul>
+                <li>Phone: +250 780 460 007</li>
+                <li>Customer: </li>
+                <li>customersupport@toha.com </li>
+                <li>Corporate: contact@toha.com
+                </li>
+                <li>Phone: +250 780 460 007</li>
+              </ul>
+          </div>
+          <div class="quick-link  ml-[-8rem] mt-[-16rem]">
+            <h1 class="font-bold">QUICK LINKS</h1>
+            <p>
+              <ul>
+                <li><a href="">Shopping</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & conditions</a></li>
+              </ul>
+            </p>
+            
+          </div>
+        </div>
+      </footer>
+  <!-- link of scriptjs used to -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="src/script.js"></script>
+</body>
+</html>
